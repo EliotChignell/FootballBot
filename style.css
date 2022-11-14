@@ -103,6 +103,14 @@ h1 {
 body {
   background-color: black;
   color: white;
+}
+
+body {
+  margin-left: clamp(0px, 3%, 100px);
+  margin-right: clamp(0px, 3%, 100px);
+}
+
+.sub-header, .main-features, .contact-us {
   margin-left: clamp(5px, 10%, 300px);
   margin-right: clamp(5px, 10%, 300px);
 }
