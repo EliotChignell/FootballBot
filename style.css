@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=PoppinsBold:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@font-face {
+  font-family: 'Syne-ExtraBold';
+  src: url('./Syne-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Syne-Bold';
+  src: url('./Syne-Bold.ttf');
+}
+@font-face {
+  font-family: 'Syne-SemiBold';
+  src: url('./Syne-SemiBold.ttf');
+}
+
+body {
+  font-family: 'Syne-SemiBold';
+}
+
+#nbabot-link {
+  color: white;
+}
+
+#nbabot-link:hover {
+  transition: 0.3s;
+  color: #5865F2;
+}
+
+.header {
+  /*border-bottom: 5px double #e68429;*/
+  border-bottom: 5px double #D50A0A;
+  border-radius: 5px;
+  font-family: 'Syne-ExtraBold';
+  margin-top: 35px;
+  display: block;
+  top: 10px;
+  position: sticky;
+  /*background-color: #36393E;*/
+  background-color: black;
+  width: 100%;
+  z-index: 999;
+  -webkit-box-shadow: 0 0 15px #acacac;
+        box-shadow: 0 0 15px #acacac;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-top: 5px double white;
+  border-left: 5px double white;
+}
+
+h1 {
+  margin: 0px;
+  display: inline;
+}
+
+#add-text, #link {
+  color: white;
+  text-decoration: none;
+  border-left: 5px double white;
+  border-right: 5px double white;
+  border-bottom: 5px double #D50A0A;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  transition: 1s;
+}
+
+#add-text {
+  padding-top: 5px;
+  background-color: black;
+}
+
+#link {
+  border-top: 5px double rgb(88, 19, 19);
+}
+
+#add-text {
+  position: relative;
+  bottom: 5px;
+  float: right;
+}
+
+#disclaimer {
+  margin-top: 0;
+  font-size: 13px;
+}
+
+#add-text:hover, #link:hover {
+  transition: 0.3s;
+  /*
+  border-top: 5px solid #5865F2;
+  border-left: 5px solid #5865F2;
+  border-right: 5px solid #5865F2;
+  */
+  border: 5px solid #5865F2;
+}
+
+#link {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin-left: clamp(5px, 10%, 300px);
+  margin-right: clamp(5px, 10%, 300px);
+}
+
+#discord-logo {
+  position: relative;
+  top: 6px;
+}
+
+.sub-header {
+  margin: 10px;
+  text-align: center;
+}
+
+#link {
+  text-align: center;
+}
+
+#example {
+  /*
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  */
+  width: clamp(100px, 100%, 400px);
+  float: right;
+  position: relative;
+  border-radius: 5px;
+}
+
+.main-features {
+  display: block;
+}
+
+.feature {
+  display: inline-block;
+  width: 100%;
+}
+
+.random-feature {
+   text-align: center;
+}
+
+.nba, .betting, .other {
+  border-bottom: 5px solid #5865F2;
+  border-radius: 5px;
+}
+
+.command {
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.underline {
+  border-bottom: 2px solid white;
+}
+
+#show {
+  transition: 1s;
+  float: right;
+  border-bottom: 5px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+#show:hover {
+  transition: 0.3s;
+  color: #ED4245;
+  border-bottom: 5px solid #ED4245;
+}
