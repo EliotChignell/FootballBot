@@ -30,7 +30,7 @@ body {
   /*border-bottom: 5px double #e68429;*/
   border-bottom: 5px double #D50A0A;
   border-radius: 5px;
-  font-family: 'Syne-ExtraBold';
+  font-family: 'Syne-Bold';
   margin-top: 35px;
   display: block;
   top: 10px;
@@ -41,7 +41,7 @@ body {
   z-index: 999;
   -webkit-box-shadow: 0 0 15px #acacac;
         box-shadow: 0 0 15px #acacac;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-left: 5px;
   border-top: 5px double white;
   border-left: 5px double white;
@@ -103,6 +103,14 @@ h1 {
 body {
   background-color: black;
   color: white;
+}
+
+body {
+  margin-left: clamp(0px, 3%, 100px);
+  margin-right: clamp(0px, 3%, 100px);
+}
+
+.sub-header, .main-features, .contact-us {
   margin-left: clamp(5px, 10%, 300px);
   margin-right: clamp(5px, 10%, 300px);
 }
