@@ -41,7 +41,7 @@ body {
   z-index: 999;
   -webkit-box-shadow: 0 0 15px #acacac;
         box-shadow: 0 0 15px #acacac;
-  padding-top: 3px;
+  padding-top: 0px;
   padding-left: 5px;
   border-top: 5px double white;
   border-left: 5px double white;
@@ -57,6 +57,7 @@ h1 {
   text-decoration: none;
   border-left: 5px double white;
   border-right: 5px double white;
+  border-top: 5px double white;
   border-bottom: 5px double #D50A0A;
   border-radius: 5px;
   padding-left: 10px;
@@ -66,7 +67,6 @@ h1 {
 }
 
 #add-text {
-  padding-top: 5px;
   background-color: black;
 }
 
@@ -87,11 +87,6 @@ h1 {
 
 #add-text:hover, #link:hover {
   transition: 0.3s;
-  /*
-  border-top: 5px solid #5865F2;
-  border-left: 5px solid #5865F2;
-  border-right: 5px solid #5865F2;
-  */
   border: 5px solid #5865F2;
 }
 
