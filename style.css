@@ -1,181 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=PoppinsBold:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+/* fonts */
 @font-face {
-  font-family: 'Syne-ExtraBold';
-  src: url('./Syne-ExtraBold.ttf');
+    src: url("./fonts/Syne-Regular.ttf");
+    font-family: "Syne-Regular";
 }
 @font-face {
-  font-family: 'Syne-Bold';
-  src: url('./Syne-Bold.ttf');
+    src: url("./fonts/Syne-SemiBold.ttf");
+    font-family: "Syne-SemiBold";
 }
 @font-face {
-  font-family: 'Syne-SemiBold';
-  src: url('./Syne-SemiBold.ttf');
+    src: url("./fonts/Syne-Bold.ttf");
+    font-family: "Syne-Bold";
+}
+@font-face {
+    src: url("./fonts/Syne-ExtraBold.ttf");
+    font-family: "Syne-ExtraBold";
+}
+@font-face {
+    src: url("./fonts/Poppins-Bold.ttf");
+    font-family: "Poppins-Bold";
+}
+@font-face {
+    src: url("./fonts/SFCompactDisplay-Medium.ttf");
+    font-family: "SFCompactDisplay";
+}
+@font-face {
+    src: url("./fonts/Righteous-Regular.ttf");
+    font-family: "Righteous-Regular";
+}
+
+html {
+    height: 100%;
+    padding: 0;
 }
 
 body {
-  font-family: 'Syne-SemiBold';
+    font-family: "Syne-Regular";
+    width: clamp(390px, 60%, 10000px);
+    /*margin-left: clamp(15px, 15%, 500px);
+    margin-right: clamp(15px, 15%, 500px);*/
+    margin:0 auto;
 }
 
-#nbabot-link {
-  color: white;
-}
-
-#nbabot-link:hover {
-  transition: 0.3s;
-  color: #5865F2;
+p {
+    font-size: 17px;
 }
 
 .header {
-  /*border-bottom: 5px double #e68429;*/
-  border-bottom: 5px double #D50A0A;
-  border-radius: 5px;
-  font-family: 'Syne-Bold';
-  margin-top: 35px;
-  display: block;
-  top: 10px;
-  position: sticky;
-  /*background-color: #36393E;*/
-  background-color: black;
-  width: 100%;
-  z-index: 999;
-  -webkit-box-shadow: 0 0 15px #acacac;
-        box-shadow: 0 0 15px #acacac;
-  padding-top: 0px;
-  padding-left: 5px;
-  border-top: 5px double white;
-  border-left: 5px double white;
+    border: 5px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 20px;
+    font-family: "Syne-Bold";
+    padding-left: 10px;
+    background-color: #6f7df8;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.example {
+    width: clamp(325px, 45%, 1000px);
+    /*border: 5px solid #75b5fb;
+    border-radius: 5px;*/
+    border-radius: 5px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.commands tbody:nth-child(even) {
+    background-color: rgb(210, 210, 210) !important;
+}
+
+.commands {
+    width: 100%;
 }
 
 h1 {
-  margin: 0px;
-  display: inline;
+    /*font-size: clamp(2.5vw, 40px, 40px);*/
+    font-size: 35px;
+    font-family: "Syne-Semibold";
+    margin-bottom: 0px;
+    bottom: 17px;
+    position: relative;
+    margin-top: 5px;
+    display: inline-block;
 }
 
-#add-text, #link {
-  color: white;
-  text-decoration: none;
-  border-left: 5px double white;
-  border-right: 5px double white;
-  border-top: 5px double white;
-  border-bottom: 5px double #D50A0A;
-  border-radius: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 0;
-  transition: 1s;
+h2 {
+    font-family: "Syne-SemiBold";
+    font-size: 30px;
 }
 
-#add-text {
-  background-color: black;
+.button {
+    text-decoration: none;
+    color: black;
+    border: 5px solid black;
+    border-bottom: 10px solid black;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #6f7df8;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display:inline-block;
+    /*background: rgb(241,115,115);
+background: linear-gradient(20deg, rgba(241,115,115,1) 27%, rgba(251,194,71,1) 100%);*/
 }
 
-#link {
-  border-top: 5px double rgb(88, 19, 19);
+.button:hover {
+    /*border: 10px solid black;*/
+    border-radius: 20px;
+    transition: 0.3s;
+    background-color: #fea450;
 }
 
-#add-text {
-  position: relative;
-  bottom: 5px;
-  float: right;
+#logo {
+    width: 50px;
+    margin-bottom: none;
 }
 
-#disclaimer {
-  margin-top: 0;
-  font-size: 13px;
+
+.content {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#add-text:hover, #link:hover {
-  transition: 0.3s;
-  border: 5px solid #5865F2;
+.project {
+    margin-left: 5vw;
+    border-left: 5px solid black;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-bottom: 2px;
 }
 
-#link {
-  display: inline-block;
-  margin-bottom: 5px;
+#logo {
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
-body {
-  background-color: black;
-  color: white;
-}
-
-body {
-  margin-left: clamp(0px, 3%, 100px);
-  margin-right: clamp(0px, 3%, 100px);
-}
-
-.sub-header, .main-features, .contact-us {
-  margin-left: clamp(5px, 10%, 300px);
-  margin-right: clamp(5px, 10%, 300px);
-}
-
-#discord-logo {
-  position: relative;
-  top: 6px;
-}
-
-.sub-header {
-  margin: 10px;
-  text-align: center;
-}
-
-#link {
-  text-align: center;
-}
-
-#example {
-  /*
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  */
-  width: clamp(100px, 100%, 400px);
-  float: right;
-  position: relative;
-  border-radius: 5px;
-}
-
-.main-features {
-  display: block;
-}
-
-.feature {
-  display: inline-block;
-  width: 100%;
-}
-
-.random-feature {
-   text-align: center;
-}
-
-.nba, .betting, .other {
-  border-bottom: 5px solid #5865F2;
-  border-radius: 5px;
-}
-
-.command {
-  border: 5px solid white;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-.underline {
-  border-bottom: 2px solid white;
-}
-
-#show {
-  transition: 1s;
-  float: right;
-  border-bottom: 5px solid white;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-}
-
-#show:hover {
-  transition: 0.3s;
-  color: #ED4245;
-  border-bottom: 5px solid #ED4245;
+.discord-logo {
+    width: 40px;
+    display: inline-block;
 }
