@@ -35,7 +35,7 @@ html {
 
 body {
     font-family: "Syne-Regular";
-    width: clamp(390px, 60%, 10000px);
+    width: clamp(350px, 60%, 10000px);
     /*margin-left: clamp(15px, 15%, 500px);
     margin-right: clamp(15px, 15%, 500px);*/
     margin:0 auto;
@@ -55,6 +55,7 @@ p {
     padding-bottom: 0px;
     padding-top: 10px;
     margin-top: 20px;
+    color: black;
 }
 
 .example {
@@ -77,8 +78,12 @@ td {
     border: 1px solid black;
 }
 
-.commands tbody:nth-child(even) {
+/* tbody:nth-child(even) {
     background-color: rgb(210, 210, 210) !important;
+} */
+
+tbody tr:nth-child(even) {
+    background-color: rgb(220, 220, 220) !important;
 }
 
 .commands {
@@ -107,7 +112,7 @@ h2 {
     border: 5px solid black;
     border-bottom: 10px solid black;
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     background-color: #6f7df8;
     font-size: 30px;

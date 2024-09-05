@@ -21,13 +21,14 @@
             <div class="buttons">
                 <center><b>
                     <a class="button" href="https://discord.com/api/oauth2/authorize?client_id=1052367598660112384&permissions=406948539456&scope=applications.commands%20bot">Add to Discord</a>
+                    <a class="button" href="https://patreon.com/eliot1">Donate</a>
                     <a class="button" href="https://discord.gg/CMuVwY9fPV">Support Server</a>
                     <a class="button" href="#commands">Commands</a>
                 </center></b>
             </div>
 
             <div class="about">
-                <h2>FootballBot is a Discord bot dedicated to NFL scores, statistics and news – from the developers behind NBABot (now BasketballBot).</h2>
+                <h2>FootballBot is a Discord bot dedicated to NFL scores, statistics and news – from the developer behind <a href="https://chig.js.org/BasketballBot">BasketballBot</a>.</h2>
                 <h3><i>Made by <a href="https://chig.js.org">Eliot Chignell (@eliot1)</a>.</i></h3s>
             </div>
 
@@ -35,10 +36,9 @@
 
             <div class="examples">
                 <center>
-                <img class="example" src="./images/player-stats.png">
-                <img class="example" src="./images/scores.png">
-                <img class="example" src="./images/game-log.png">   
-                <img class="example" src="./images/player-info.png">
+                    <img class="example" src="./images/player-stats.png">
+                    <img class="example" src="./images/scores.png">
+                    <img class="example" src="./images/schedule.png">   
                 </center>
             </div>
 
@@ -46,11 +46,10 @@
 
             <div class="commands">
                 <h2 id="commands">Commands</h2>
-                <table class="commands-table">
-                </table>
             </div>
 
             <h2>Interested?</h2>
+            
             <a class="button" href="https://discord.com/api/oauth2/authorize?client_id=1052367598660112384&permissions=406948539456&scope=applications.commands%20bot">Add to Discord</a>
 
             <br><br>
@@ -76,14 +75,7 @@
             <br>
         </div>
 
-        <script>
-            const commands = {"draft":"Get the list of drafted player for a specific year and/or a specific team","game-log":"Get the most recent performances of a certain player.","help":"Information about FootballBot and its commands.","news":"Get the latest news","player-info":"Get information on a current NFL player.","player-stats":"Get the statistics for a current NFL player.","roster":"Get the current roster of an NFL team.","scores":"Get scores from a current week as default or another week and season if specified.","standings":"Get the standings of all divisions (by default), or a specific division or conference.","teams":"Get all NFL teams"};
-            let table = document.querySelector(`.commands-table`);
-            let counter = 0;
-            for (var command in commands) {
-                counter++;
-                table.innerHTML += `<tr${counter % 2 == 0 ? ` background-color="black"` : ``}><td>/${command}</td><td>${commands[command]}</td></tr>`;
-            }
-        </script>
+        <script src="scripts/dump.js"></script>
+        <script src="scripts/index.js"></script>
     </body>
 </html>
